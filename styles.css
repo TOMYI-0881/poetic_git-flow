@@ -1,0 +1,175 @@
+body {
+  /* Define la fuente principal de todo el documento */
+  font-family: 'Georgia', serif;
+
+  /* Aplica un fondo con un degradado lineal.
+
+     DIRECCIÓN DEL DEGRADADO
+     ------------------------
+     El primer parámetro opcional de linear-gradient() define la dirección.
+     Si NO se especifica, la dirección por defecto es "to bottom" (de arriba hacia abajo).
+
+     Variantes principales:
+       - to bottom      → De arriba hacia abajo (por defecto)
+       - to top         → De abajo hacia arriba
+       - to right       → De izquierda a derecha
+       - to left        → De derecha a izquierda
+
+     Variantes diagonales:
+       - to bottom right  → De arriba izquierda hacia abajo derecha
+       - to bottom left   → De arriba derecha hacia abajo izquierda
+       - to top right     → De abajo izquierda hacia arriba derecha
+       - to top left      → De abajo derecha hacia arriba izquierda
+
+     Usando ángulos:
+       - 0deg    → De abajo hacia arriba
+       - 90deg   → De izquierda a derecha
+       - 180deg  → De arriba hacia abajo
+       - 270deg  → De derecha a izquierda
+
+     Nota: en todos los casos, el PRIMER color aparece en el inicio de la dirección,
+           y el SEGUNDO color aparece al final de la dirección.
+
+     Ejemplo actual:
+       linear-gradient(to bottom, #fef8e6, #e6d5b8)
+       → #fef8e6 arriba y #e6d5b8 abajo.
+  */
+  background: linear-gradient(to bottom right , #fef8e6, #e6d5b8);
+
+  /* Establece el color principal del texto */
+  color: #333;
+
+  /* Elimina los márgenes predeterminados del navegador */
+  margin: 0;
+
+  /* Elimina el relleno predeterminado del navegador */
+  padding: 0;
+
+  /* Centra horizontalmente el texto en todo el documento */
+  text-align: center;
+}
+
+
+/* Estilos para el elemento <header> */
+header {
+  /* Color de fondo marrón claro */
+  background-color: #a67c52;
+
+  /* Color del texto en blanco */
+  color: #fff;
+
+  /* Espaciado interno para dar separación entre el contenido y los bordes */
+  padding: 20px;
+
+  /* Tamaño de la fuente del texto dentro del header */
+  font-size: 24px;
+}
+
+
+
+/* Estilos para el elemento <main> */
+main {
+  /* 
+    Define un ancho máximo para el contenido, evitando que se expanda demasiado.
+  */
+  max-width: 600px;
+
+  /* 
+    Margen superior e inferior de 40px.
+    'auto' en los márgenes izquierdo y derecho centra el elemento horizontalmente.
+  */
+  margin: 40px auto;
+}
+
+
+
+/* Estilos para los elementos con la clase .poem */
+.poem {
+  /* Color de fondo blanco para destacar el contenido del poema */
+  background-color: #fff;
+
+  /* Espaciado interno para separar el texto de los bordes del contenedor */
+  padding: 20px;
+
+  /* Espacio inferior para separar cada poema del siguiente elemento */
+  margin-bottom: 20px;
+
+  /* Bordes redondeados para un aspecto más suave y estético */
+  border-radius: 10px;
+
+  /* 
+    Sombra proyectada para dar efecto de elevación:
+    - 10px desplazamiento horizontal
+    - 10px desplazamiento vertical
+    - 10px desenfoque
+    - Color rojo con opacidad del 10%
+  */
+  box-shadow: 10px 10px 10px rgb(191 17 17 / 10%);
+}
+
+
+
+/* Estilos para los encabezados <h2> dentro de los elementos con clase .poem */
+.poem h2 {
+  /* Color del texto en un tono marrón para resaltar el título del poema */
+  color: #7c4c29;
+
+  /* Tamaño de fuente más grande para jerarquizar el encabezado */
+  font-size: 20px;
+
+  /* 
+    Espacio inferior para separar el título del contenido que sigue,
+    logrando una mejor legibilidad
+  */
+  margin-bottom: 10px;
+}
+
+
+
+/* Estilos para los párrafos <p> dentro de los elementos con clase .poem */
+.poem p {
+  /* Tamaño de fuente más grande para mejorar la lectura del poema */
+  font-size: 18px;
+
+  /* Altura de línea ampliada para un texto más cómodo y legible */
+  line-height: 1.6;
+
+  /* Color gris oscuro para suavizar el contraste del texto */
+  color: #444;
+}
+
+
+
+/* Estilos para el texto del autor del poema */
+.author {
+  /* Espacio superior para separar el autor del contenido anterior */
+  margin-top: 10px;
+
+  /* Estilo de letra en cursiva para diferenciar visualmente el autor */
+  font-style: italic;
+
+  /* Color marrón para mantener coherencia estética con el resto del diseño */
+  color: #7c4c29;
+}
+
+
+
+/* Estilos para el elemento <footer> de la página */
+footer {
+  /* Fondo marrón claro para separar visualmente el pie de página */
+  background-color: #a67c52;
+
+  /* Texto en blanco para asegurar un buen contraste con el fondo */
+  color: white;
+
+  /* Espaciado interno para que el contenido del footer no quede pegado a los bordes */
+  padding: 10px;
+
+  /* Tamaño de fuente reducido para diferenciarlo del contenido principal */
+  font-size: 14px;
+
+  /* Ancho completo para abarcar toda la parte inferior de la página */
+  /*width: 100%; quitado porque da bugs de dimension */
+}
+
+
